@@ -146,7 +146,7 @@ export default function Home() {
         )}
 
         {cameraActive && (
-          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: '#000', z-index: 1000, display: 'flex', flexDirection: 'column' }}>
+          <div style={{ position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, background: '#000', zIndex: 1000, display: 'flex', flexDirection: 'column' }}>
             <video ref={videoRef} autoPlay playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
             <div style={{ position: 'absolute', bottom: '40px', left: 0, right: 0, display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '40px' }}>
               <button onClick={stopCamera} style={{ background: 'rgba(255,255,255,0.2)', border: 'none', borderRadius: '50%', padding: '15px', color: '#fff' }}>
